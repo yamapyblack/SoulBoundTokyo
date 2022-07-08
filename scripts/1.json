@@ -1,0 +1,15 @@
+{
+  "name": "KING OF POKER NFTTokyo 2022 07.10",
+  "description": "You are a crazy gambler.",
+  "image": "https://bafybeibfrj6qy52nhjfjqiiplf6swbx2hx3xcva3gtsdmxa74l7hgn3n4e.ipfs.nftstorage.link/",
+  "attributes": [
+    {
+      "trait_type": "year",
+      "value": "2022"
+    },
+    {
+      "trait_type": "competition",
+      "value": "NFTTokyo"
+    }
+  ]
+}

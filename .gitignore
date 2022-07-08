@@ -1,0 +1,10 @@
+#direnv
+.envrc
+
+#node
+node_modules
+
+#hardhat
+cache
+typechain-types
+artifacts
