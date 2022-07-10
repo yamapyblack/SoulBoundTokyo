@@ -1,11 +1,15 @@
-# arbitrage-v2
+# SoulBoundTokyo
 
-You can lend by **aave flashloan** (v2) and exchange NFTs by **NFTX**.
+SoulBoundTokyo is the **SoulBoundToken** (SBT) by Tokyo.
 
-Contract
+## Features
 
-FlashLoanNFTX.sol
+- Non-transferable NFT
 
-Test
+- Token IDs are sequentially numbered and count up (starting from 0)
 
-FlashLoanNFTX-test.ts
+- Can be minted by anyone
+
+- both the minter and receiver must agree (sign)
+
+- Cannot mint tokens for oneself
