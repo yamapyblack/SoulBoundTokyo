@@ -3,9 +3,9 @@ import { KmsEthersSigner } from "aws-kms-ethers-signer";
 import { HttpNetworkConfig } from "hardhat/types"
 
 export const NilAddress = "0x000000000000000000000000000000000000000"
-export const ownerAddr = "0xC275b7e36faF2eBdaBf2B256443e88d911fd822e"
-export const receiverAddr = "0x95e311f6C2Fd8EA309C2777BCD973541D6c31325"
-export const soul = "0xdD8Eb97a180C165D2c61062FFdEB683B271AE485"
+export const ownerAddr = ""
+export const receiverAddr = ""
+export const soul = ""
 
 const region = process.env.AWS_REGION!; 
 const keyId = process.env.KMS_KEY_ID!; 
