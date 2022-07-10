@@ -5,6 +5,7 @@ import '@typechain/hardhat'
 import '@nomiclabs/hardhat-ethers'
 import "@nomiclabs/hardhat-waffle";
 import "hardhat-gas-reporter"
+import "@nomiclabs/hardhat-etherscan";
 
 const accounts = (): HttpNetworkAccountsConfig => {
   if (!process.env.PRIV_KEY) {
@@ -56,6 +57,9 @@ const config: HardhatUserConfig = {
   gasReporter: {
     currency: 'ETH',
     gasPrice: 1000000001,
+  },
+  etherscan: {
+    apiKey: `${process.env.ETHERSCAN_API_KEY}`
   },
 };
 
