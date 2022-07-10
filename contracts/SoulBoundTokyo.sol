@@ -3,7 +3,7 @@ pragma solidity 0.8.15;
 
 import "./ERC4973.sol";
 
-contract SoulBoundPoker is ERC4973 {
+contract SoulBoundTokyo is ERC4973 {
     constructor(
         string memory name_,
         string memory symbol_,

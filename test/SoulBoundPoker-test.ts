@@ -8,25 +8,25 @@ const ethSigUtil = require('eth-sig-util');
 
 let owner:SignerWithAddress, addr1:SignerWithAddress, addr2:SignerWithAddress
 
-import { SoulBoundPoker } from "../typechain-types/index"
+import { SoulBoundTokyo } from "../typechain-types/index"
 
-describe("testing for SoulBoundPoker", async () => {
-    let contract: SoulBoundPoker
+describe("testing for SoulBoundTokyo", async () => {
+    let contract: SoulBoundTokyo
 
     beforeEach(async () => {
         [owner,addr1,addr2,] = await ethers.getSigners()
 
-        const C1 = await ethers.getContractFactory("SoulBoundPoker")
-        contract = (await C1.deploy("SoulBoundPoker", "SBP", "1")) as SoulBoundPoker
+        const C1 = await ethers.getContractFactory("SoulBoundTokyo")
+        contract = (await C1.deploy("SoulBoundTokyo", "SBP", "1")) as SoulBoundTokyo
         await contract.deployed()
     })
 
-    describe("SoulBoundPoker", async() => {
+    describe("SoulBoundTokyo", async() => {
         const uri = "https://bafkreidbyhif3mj3aabjws5gf77pm6srj5gwoosonha4ysrdaqyvopvoqy.ipfs.nftstorage.link/"
  
         it("success", async () => {
             const domain = {
-                name: 'SoulBoundPoker',
+                name: 'SoulBoundTokyo',
                 version: '1',
                 chainId: 31337,
                 verifyingContract: contract.address
@@ -60,7 +60,7 @@ describe("testing for SoulBoundPoker", async () => {
                     Agreement: Agreement
                 },
                 domain: { 
-                    name: 'SoulBoundPoker',
+                    name: 'SoulBoundTokyo',
                     version: '1',
                     chainId: 31337,
                     verifyingContract: contract.address
